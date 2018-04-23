@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DocumentActivity">
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar_doc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:src="@drawable/cambio_logo"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="#000000"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driving Licence \n      (Front)"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driving Licence \n      (Back)"
+                    android:maxLines="2"
+                    android:layout_marginLeft="90dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="25dp"
+            android:padding="16dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                app:civ_border_width="2dp"
+                android:id="@+id/imgdlfront"
+                android:src="@drawable/ic_doc_black_24dp"
+                app:civ_border_color="#008080"/>
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="110dp"
+                app:civ_border_color="#008080"
+                android:src="@drawable/ic_doc_black_24dp"
+                android:id="@+id/imgdlback"
+                app:civ_border_width="2dp" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-20dp"
+                android:padding="16dp">
+                <Button
+                    android:id="@+id/btndfront"
+                    android:layout_width="128dp"
+                    android:layout_height="25dp"
+                    android:text="Upload Image"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="0dp"
+                    />
+                <Button
+                    android:id="@+id/btndback"
+                    android:layout_width="128dp"
+                    android:layout_height="25dp"
+                    android:text="Upload Image"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="55dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:padding="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birth Certificate"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Insurance"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="90dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="25dp"
+                android:padding="16dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    app:civ_border_width="2dp"
+                    android:id="@+id/imgdocCert"
+                    android:src="@drawable/ic_doc_black_24dp"
+                    app:civ_border_color="#008080"/>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginLeft="110dp"
+                    app:civ_border_color="#008080"
+                    android:src="@drawable/ic_doc_black_24dp"
+                    android:id="@+id/imgdocInsu"
+                    app:civ_border_width="2dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="-20dp"
+                android:padding="16dp">
+                <Button
+                    android:id="@+id/btnbirth"
+                    android:layout_width="128dp"
+                    android:layout_height="25dp"
+                    android:text="Upload Image"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="0dp"
+                    />
+                <Button
+                    android:id="@+id/btnins"
+                    android:layout_width="128dp"
+                    android:layout_height="25dp"
+                    android:text="Upload Image"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="55dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnDoc"
+                android:textColor="#ffffff"
+                android:background="@drawable/buttongradient"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"/>
+        </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

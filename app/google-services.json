@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "977292653675",
+    "firebase_url": "https://camb-96a18.firebaseio.com",
+    "project_id": "camb-96a18",
+    "storage_bucket": "camb-96a18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977292653675:android:0937f6c03c0e6e79",
+        "android_client_info": {
+          "package_name": "phcl.biz.camb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977292653675-1tv4qavbs5icch3vbvuc01oe698flh4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "phcl.biz.camb",
+            "certificate_hash": "6c65c9a8910844d84030115cde29b5874b38e368"
+          }
+        },
+        {
+          "client_id": "977292653675-30noqc8f7bkif7f28mgdi6ldeknaie0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZj3V05GfB8-1pxwa1BsTxKCczk7x1RCM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977292653675-30noqc8f7bkif7f28mgdi6ldeknaie0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
